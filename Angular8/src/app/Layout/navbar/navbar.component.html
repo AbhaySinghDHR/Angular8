@@ -1,0 +1,24 @@
+<nav ngbNav #nav="ngbNav"  class="navbar navbar-expand-sm bg-dark navbar-dark" >
+    <ng-container ngbNavItem>
+     <a ngbNavLink class="nav-link">Home</a>
+     <ng-template ngbNavContent>
+       <app-home></app-home>           
+     </ng-template>
+   </ng-container>
+   <ng-container ngbNavItem>
+     <a ngbNavLink>Commissions</a>
+     <ng-template ngbNavContent>
+       <app-commissions></app-commissions> 
+     </ng-template>
+   </ng-container>
+   <ng-container ngbNavItem>
+     <a ngbNavLink>Sales Entities</a>
+     <ng-template ngbNavContent>
+       <app-sales-entity></app-sales-entity> 
+     </ng-template>
+   </ng-container>
+ </nav>
+ 
+ <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+
